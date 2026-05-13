@@ -4,5 +4,6 @@ form.addEventListener("submit", function(e){
 
     e.preventDefault();
 
-    alert("Register berhasil!");
+    alert("Akun berhasil dibuat!");
+
 });
