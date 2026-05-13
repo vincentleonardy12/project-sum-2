@@ -1,66 +1,104 @@
 
 <html>
 <head>
-<title>register form</title>
-<link rel="stylesheet" href="proj.css">
+    <title>TokoKu</title>
+    <link rel="stylesheet" href="proj.css">
 </head>
 <body>
-<nav class="menu">
-    <div class="menu-container">
-        <div class="logo">MyForm</div>
 
-        <div class="hamburger" id="hamburger">
-            ☰
+    <header>
+
+        <div class="logo">
+            TOKOKU
         </div>
 
-        <ul id="nav-list">
-            <li>Home</li>
+        <nav>
+            <ul class="menu">
 
-            <li class="has-submenu">
-                Register
-                <ul class="submenu">
-                    <li>Student</li>
-<li><a href="teacher.html">Teacher</a></li>
-                </ul>
-            </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div class="kotak">
-<h1>REGISTER FORM</h1>
-<p class="subjudul">Fill in the correct information</p>
-<div id="hasil"></div>
-<label>name</label>
-<input type="text" id="name" placeholder="e.g Robby simanjuntak">
-<p class="smalltext">FULL NAME</p>
-<label>class</label>
-<input type="text" id="class" placeholder="e.g 1a/2b/3c">
-<p class="smalltext">current class/future</p>
-<label>gender</label>
-<label><input type="radio" name="gender" value="male">male</label>
-<label><input type="radio" name="gender" value="female">female</label>
-<label class="title">pick a cca</label>
-<label><input type="checkbox" name="cca" value="basket">basketball</label>
-<label><input type="checkbox" name="cca" value="futsal">futsal</label>
-<label><input type="checkbox" name="cca" value="Choir">Choir</label>
-<label><input type="checkbox" name="cca" value="Science">Science</label>
-<label><input type="checkbox" name="cca" value="IT">IT</label>
-<label><input type="checkbox" name="cca" value="Music Band">Music Band</label>
-<label><input type="checkbox" name="cca" value="Art">Art</label>
-<p class="smalltext">pick one or more(optional)</p>
-<label class="title">pick a schedule</label>
-<label><input type="radio" name="jadwal" value="morning">morning(07.00-12.00)</label>
-<label><input type="radio" name="jadwal" value="noon">noon(12.30-17.00)</label>
-<label><input type="radio" name="jadwal" value="night">night(17.30-20.30)</label>
-<label><input type="radio" name="jadwal" value="mixed">mixed(anytime)</label>
-<p class="smalltext">mandatory</p>
-<div>
-<button id="tampil">submit</button>
-<button id="reset">reset</button>
-</div>
-</div>
-<script src="proj1.js"></script>
+                <li><a href="#">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Produk</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Elektronik</a></li>
+                        <li><a href="#">Fashion</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Layanan</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Pembayaran</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+        <h1>Selamat Datang</h1>
+        <p>Website Ecommerce Sederhana</p>
+    </section>
+
+
+    <section class="register-box">
+
+        <h2>Register Form</h2>
+
+        <form id="registerForm">
+
+            <input type="text" placeholder="Nama Lengkap" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <input type="password" placeholder="Password" required>
+
+            <input type="password" placeholder="Konfirmasi Password" required>
+
+            <button type="submit">Daftar</button>
+
+        </form>
+
+    </section>
+
+
+    <section class="product-area">
+
+        <div class="card">
+            <img src="https://picsum.photos/200?1">
+            <h3>Sepatu</h3>
+            <p>Rp 250.000</p>
+            <button>Beli</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?2">
+            <h3>Headset</h3>
+            <p>Rp 350.000</p>
+            <button>Beli</button>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/200?3">
+            <h3>Jam Tangan</h3>
+            <p>Rp 180.000</p>
+            <button>Beli</button>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>2026 © TOKOKU</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
