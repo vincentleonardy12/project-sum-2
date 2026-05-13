@@ -1,104 +1,155 @@
 
 <html>
 <head>
-    <title>TokoKu</title>
-    <link rel="stylesheet" href="proj.css">
+    <title>LuxShop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
-
         <div class="logo">
-            TOKOKU
+            LuxShop
         </div>
-
         <nav>
             <ul class="menu">
-
                 <li><a href="#">Home</a></li>
-
                 <li class="dropdown">
                     <a href="#">Produk</a>
-
                     <ul class="submenu">
-                        <li><a href="#">Elektronik</a></li>
                         <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Elektronik</a></li>
                     </ul>
+
                 </li>
 
                 <li class="dropdown">
+
                     <a href="#">Layanan</a>
 
                     <ul class="submenu">
                         <li><a href="#">Pengiriman</a></li>
                         <li><a href="#">Pembayaran</a></li>
                     </ul>
+
                 </li>
 
             </ul>
+
         </nav>
 
     </header>
 
-
     <section class="hero">
-        <h1>Selamat Datang</h1>
-        <p>Website Ecommerce Sederhana</p>
-    </section>
 
+        <div class="hero-text">
 
-    <section class="register-box">
+            <h1>Belanja Modern <br> Lebih Mudah</h1>
 
-        <h2>Register Form</h2>
+            <p>
+                Temukan produk terbaik dengan kualitas premium
+                dan harga terjangkau.
+            </p>
 
-        <form id="registerForm">
+            <button>Belanja Sekarang</button>
 
-            <input type="text" placeholder="Nama Lengkap" required>
-
-            <input type="email" placeholder="Email" required>
-
-            <input type="password" placeholder="Password" required>
-
-            <input type="password" placeholder="Konfirmasi Password" required>
-
-            <button type="submit">Daftar</button>
-
-        </form>
-
-    </section>
-
-
-    <section class="product-area">
-
-        <div class="card">
-            <img src="https://picsum.photos/200?1">
-            <h3>Sepatu</h3>
-            <p>Rp 250.000</p>
-            <button>Beli</button>
         </div>
 
-        <div class="card">
-            <img src="https://picsum.photos/200?2">
-            <h3>Headset</h3>
-            <p>Rp 350.000</p>
-            <button>Beli</button>
-        </div>
-
-        <div class="card">
-            <img src="https://picsum.photos/200?3">
-            <h3>Jam Tangan</h3>
-            <p>Rp 180.000</p>
-            <button>Beli</button>
+        <div class="hero-image">
+            <img src="https://picsum.photos/500/400" alt="">
         </div>
 
     </section>
 
+    <section class="register-section">
 
+        <div class="register-box">
+
+            <h2>Daftar Akun</h2>
+
+            <p class="desc">
+                Buat akun untuk mulai berbelanja
+            </p>
+
+            <form id="registerForm">
+
+                <input type="text" placeholder="Nama Lengkap" required>
+
+                <input type="email" placeholder="Email" required>
+
+                <input type="password" placeholder="Password" required>
+
+                <input type="password" placeholder="Konfirmasi Password" required>
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- produk -->
+
+    <section class="product-section">
+
+        <div class="title">
+            <h2>Produk Populer</h2>
+        </div>
+
+        <div class="product-container">
+
+            <div class="card">
+
+                <img src="https://picsum.photos/300?1">
+
+                <h3>Sepatu Sneakers</h3>
+
+                <p class="price">Rp 450.000</p>
+
+                <button>Beli Sekarang</button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://picsum.photos/300?2">
+
+                <h3>Headphone Gaming</h3>
+
+                <p class="price">Rp 700.000</p>
+
+                <button>Beli Sekarang</button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://picsum.photos/300?3">
+
+                <h3>Jam Tangan</h3>
+
+                <p class="price">Rp 350.000</p>
+
+                <button>Beli Sekarang</button>
+
+            </div>
+
+        </div>
+
+    </section>
     <footer>
-        <p>2026 © TOKOKU</p>
+        <p>
+            © 2026 LuxShop - Ecommerce Website
+        </p>
+
     </footer>
 
-    <script src="script.js"></script>
-
+    <script src="proj.js"></script>
 </body>
 </html>
