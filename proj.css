@@ -1,0 +1,200 @@
+
+.menu {
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    position: relative;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.menu ul li:hover {
+    background: #374151;
+}
+
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1f2937;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    border-radius: 8px;
+
+
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.has-submenu:hover .submenu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .menu ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #111827;
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu ul.show {
+        display: flex;
+    }
+
+    .menu ul li {
+        border-top: 1px solid #374151;
+    }
+
+    .submenu {
+        position: static;
+        opacity: 1;
+        transform: none;
+        display: none;
+        background: #1f2937;
+    }
+
+    .submenu.show {
+        display: flex;
+    }
+}
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background: #374151;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3b82f6, #9333ea);
+    margin: 0;
+    padding: 0;
+}
+
+
+.kotak {
+    background: white;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subjudul {
+    text-align: center;
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+
+.smalltext {
+    font-size: 0.75rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+
+button {
+    width: 48%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+
+.kotak div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.kotak2 {
+    background: #f3f4f6;
+    padding: 10px;
+    border
